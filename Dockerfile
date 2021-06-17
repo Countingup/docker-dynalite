@@ -1,5 +1,7 @@
 FROM node:12-alpine
 
+LABEL org.opencontainers.image.source="https://github.com/Countingup/docker-dynalite"
+
 RUN addgroup dynalite && adduser -H -D -G dynalite dynalite
 
 # See https://github.com/npm/npm/issues/17851 for npm permissions issues when
